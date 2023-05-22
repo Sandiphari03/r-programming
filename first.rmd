@@ -1,0 +1,19 @@
+# Plotting the visualisation of cars dataset.
+## Data Analysis and pre processing
+"Section-1"
+```{r}
+d=read.csv(file.choose())
+d
+str(d)
+summary(d)
+sum(is.na(d))
+```
+The sum of missing value in the dataset are r sum(is.na(d)).
+Mean : r.mean(d$living_area)
+median : r,median(d$living_area)
+
+"section-2*
+```{r}
+cars
+plot(cars$speed,cars$dist,type='p',col='green',pch=8)
+```
